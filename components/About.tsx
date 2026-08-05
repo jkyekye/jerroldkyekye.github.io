@@ -3,41 +3,52 @@ import Image, { StaticImageData } from "next/image";
 
 export default function About() {
     return (
-        <section id="about" className="dark-bg">
-            <div className="flex">
-                <div className="flex-full">
-                    <AboutCard
-                        title="UX/UI Design"
-                        icon="/icons/design.svg"
-                        description="I create design  products with unique ideas."
-                        projects={7} />
-                    <AboutCard
-                        title="Web Design"
-                        icon="/icons/code.svg"
-                        description="I develop Front-End with coding super smooth."
-                        projects={10} />
-                    <AboutCard
-                        title="Mobile"
-                        icon="/icons/phone.svg"
-                        description="I develop cross-platform mobile applications."
-                        projects={7} />
-                </div>
-                
-                <div className="flex-full about-text">
-                    <h5 className="gray">Introduce</h5>
-                    <h1 className="white">Hello, I&#39;m Skander Blaiti</h1>
-                    <h3 className="white">Design is not just what it looks like. Design is how it works!</h3>
-                    <p className="gray">I have proceeded my dream to be a developer as it has been my lifelong ambition. I am a talented Front-End developer with a UI/UX design background. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
-                    I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
-                </div>
+        <section id="about" className="section-block">
+            <div className="section-heading">
+                <p className="eyebrow">About</p>
+                <h2>Built around electrical engineering, not a generic template.</h2>
+                <p>
+                    This version is designed to present you as an engineer first: what you study, how you think,
+                    and the kinds of systems you want to build next.
+                </p>
             </div>
 
-            <div className="flex partners justify-space">
-                <Image src="/images/partners/wallety.png" height={45} width={180} alt="wallety" />
-                <Image src="/images/partners/artisty.png" height={45} width={180} alt="artisty" />
-                <Image src="/images/partners/khedma-lik.png" height={45} width={180} alt="khedma-lik" />
-                <Image src="/images/partners/directy.png" height={45} width={180} alt="directy" />
-                <Image src="/images/partners/telefy.png" height={45} width={180} alt="telefy" />
+            <div className="about-layout">
+                <div className="about-cards">
+                    <AboutCard
+                        title="Circuit Analysis"
+                        icon="/icons/code.svg"
+                        description="Comfortable breaking down systems into smaller blocks and reasoning through how each part behaves."
+                        projects={3} />
+                    <AboutCard
+                        title="Hands-On Systems"
+                        icon="/icons/design.svg"
+                        description="Interested in practical work across labs, prototyping, instrumentation, and hardware troubleshooting."
+                        projects={4} />
+                    <AboutCard
+                        title="Communication"
+                        icon="/icons/phone.svg"
+                        description="I value clear documentation, clean presentation, and making technical work easy to understand."
+                        projects={2} />
+                </div>
+                <div className="about-text">
+                    <p className="eyebrow">Profile</p>
+                    <h3>Jerrold Kyekye</h3>
+                    <p>
+                        I am building a career in electrical engineering with a strong interest in systems that are dependable,
+                        useful, and grounded in real-world constraints. This portfolio gives me a place to showcase future projects,
+                        lab work, and resume details as they grow.
+                    </p>
+                    <p>
+                        When I am not working on coursework or technical ideas, I like keeping my projects organized, documenting my process,
+                        and thinking carefully about how to turn a concept into something tangible.
+                    </p>
+                    <div className="profile-list">
+                        <span>Location: United States</span>
+                        <span>Focus: Electrical Engineering</span>
+                        <span>Status: Open to opportunities</span>
+                    </div>
+                </div>
             </div>
         </section>
     )
@@ -54,11 +65,11 @@ function AboutCard ({title, icon, description, projects} : Props) {
     return(
         <div className="light-bg about-card">
             <div className="flex justify-space">
-                <h3 className="green">{title}</h3>
+                <h3 className="card-title">{title}</h3>
                 <Image src={icon} width={28} height={28} alt={title} />
             </div>
-            <p className="white">{description}</p>
-            <span className="gray">{projects.toString()} projects</span>
+            <p>{description}</p>
+            <span>{projects.toString()} focus areas</span>
         </div>
     )
 }

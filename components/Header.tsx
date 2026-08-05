@@ -5,16 +5,35 @@ import NavBar from "./NavBar";
 
 export default function Header() {
     return (
-        <header>
+        <header className="hero-shell">
             <NavBar />
-            <div className="header flex light-bg">
-                <div>
-                    <h1 className="white">Jerrold Xornam Kyekye</h1>
-                    <h2 className="white">University of Notre Dame - B.SC. Electrical Engineering</h2>
-                    <p className="gray">I enjoy building systems from the ground up, and understanding how each component contributes to the whole.</p>
-                    <a className="green" href="mailto:jkyekye@nd.edu">Let&#39;s chat!</a>
+            <div className="hero-grid">
+                <div className="hero-copy">
+                    <p className="eyebrow">Electrical Engineering Portfolio</p>
+                    <h1>Jerrold Kyekye</h1>
+                    <h2>Electrical engineering student focused on practical systems, clear thinking, and hands-on problem solving.</h2>
+                    <p className="hero-text">
+                        I like the part of engineering where ideas become real hardware, readable documentation, and solutions that people can trust.
+                        This site is my home for future projects, coursework highlights, and resume details.
+                    </p>
+                    <div className="hero-actions">
+                        <a className="primary-link" href="mailto:jkyekye@nd.edu">Email me</a>
+                        <a className="secondary-link" href="#projects">See projects</a>
+                    </div>
+                    <div className="hero-pills">
+                        <span>Circuit design</span>
+                        <span>Embedded systems</span>
+                        <span>Controls</span>
+                        <span>Power systems</span>
+                    </div>
                 </div>
-                <Image src="/images/jerrold.jpeg" width={463} height={513} alt="blaiti"  /> 
+                <div className="hero-portrait">
+                    <Image src="/images/partners/jerrold.jpeg" width={520} height={620} alt="Jerrold Kyekye portrait" priority />
+                    <div className="portrait-card">
+                        <p>Current focus</p>
+                        <h3>Building a portfolio for internships and future electrical engineering work.</h3>
+                    </div>
+                </div>
             </div>
         </header>
     )

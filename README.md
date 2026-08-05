@@ -1,108 +1,25 @@
-# Developer Portfolio
+# Jerrold Kyekye Portfolio
 
-![licence](https://img.shields.io/badge/licence-MIT-blue)
+This repo now serves as a personal electrical engineering portfolio.
 
-Developer Portfolio is a web template made for developers to present themselves based on NextJS
+## What changed
 
-![Developer Protfolio](https://user-images.githubusercontent.com/32510139/196662875-44970df4-d748-4a76-8a5f-ec2f4f0eb0e9.png)
+- Replaced the template-style copy with engineering-focused content.
+- Added a dedicated projects section with placeholders for future work.
+- Reworked the visual design for a cleaner, more distinctive look.
+- Kept your portrait in the hero section.
 
-## Table of Contents
+## Resume slot
 
-- [Demo](#demo)
-- [Tech Stack](#tech-stack)
-- [Quick Start](#quick-start)
-- [Run Locally](#run-locally)
-- [Deployment](#deployment)
-- [File Structure](#file-structure)
-- [Author](#author)
-- [License](#license)
+Add your resume PDF at:
 
-## Demo
+`public/resume.pdf`
 
-[Developer Portfolio demo link](https://developer-portfolio-gules.vercel.app/)
+The footer already points to that location as the placeholder for your downloadable resume.
 
-## Tech Stack
-
-**Frontend:** HTML5 / CSS3 / ReactJS / NextJS
-
-## Quick start
-
-Clone the repo
+## Run locally
 
 ```bash
-  git clone https://github.com/blaiti/Developer-Portfolio.git
+npm install
+npm run dev
 ```
-
-Install Developer Portfolio with npm
-
-```bash
-  cd Developer-Portfolio
-  npm install
-```
-
-## Run Locally
-
-To run locally, run the following command
-
-```bash
-  npm run dev
-```
-
-## Deployment
-
-To create a production build
-
-```bash
-  npm run build
-```
-
-## File Structure
-
-Within the download you'll find the following directories and files:
-
-```bash
-Developer-Portfolio
-.
-├── package.json
-├── package_lock.json
-├── tsconfig.json
-├── next-env.d.ts
-├── next.config.js
-├── components
-│   ├── About.tsx
-│   ├── Footer.tsx
-│   ├── Header.tsx
-│   └── NavBar.tsx
-├── pages
-│   ├── _app.tsx
-│   └── index.tsx
-├── public
-│   ├── favicon.ico
-│   ├── icons
-│   │   ├── code.svg
-│   │   ├── design.svg
-│   │   ├── facebook.svg
-│   │   ├── github.svg
-│   │   ├── instagram.svg
-│   │   ├── linkedin.svg
-│   │   ├── phone.svg
-│   │   └── youtube.svg
-│   └── images
-│       ├── blaiti.png
-│       └── partners
-│           ├── artisty.png
-│           ├── directy.png
-│           ├── khedma-lik.png
-│           ├── wallety.png
-│           └── telefy.png
-└── styles
-    └── global.css
-```
-
-## Author
-
-[@blaiti](https://github.com/blaiti)
-
-## License
-
-[MIT](https://github.com/blaiti/Chaty/blob/main/LICENSE)
