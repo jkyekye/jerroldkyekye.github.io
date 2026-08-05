@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/jerroldkyekye.github.io',
+  assetPrefix: '/jerroldkyekye.github.io/',
   images: {
     unoptimized: true,
   },
