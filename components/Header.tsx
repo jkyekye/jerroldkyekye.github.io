@@ -1,5 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import Image from "next/image";
+import { withBasePath } from "./basePath";
 
 import NavBar from "./NavBar";
 
@@ -28,7 +29,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="hero-portrait">
-                    <Image src="/images/partners/jerrold.jpeg" width={520} height={620} alt="Jerrold Kyekye portrait" priority />
+                    <Image src={withBasePath("/images/partners/jerrold.jpeg")} width={520} height={620} alt="Jerrold Kyekye portrait" priority />
                     <div className="portrait-card">
                         <p>Current focus</p>
                         <h3>Building a portfolio for internships and future electrical engineering work.</h3>

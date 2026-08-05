@@ -1,6 +1,7 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { withBasePath } from "./basePath";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
         <footer id="contact" className="site-footer">
             <div className="footer-copy">
                 <p className="eyebrow">Contact</p>
-                <h2>Let’s build the next version of this together.</h2>
+                <h2>Let's build the next version of this together.</h2>
                 <p>
                     This portfolio is ready for your resume file, project links, and any future engineering work you want to highlight.
                 </p>
@@ -23,12 +24,12 @@ export default function Footer() {
             <ul className="flex footer-icons">
                 <li>
                     <a href="https://www.linkedin.com/in/jerrold-kyekye/" target="_blank" rel="noreferrer">
-                        <Image src="/icons/linkedin.svg" width={24} height={24} alt="LinkedIn icon" />
+                        <Image src={withBasePath("/icons/linkedin.svg")} width={24} height={24} alt="LinkedIn icon" />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/jkyekye" target="_blank" rel="noreferrer">
-                        <Image src="/icons/github.svg" width={24} height={24} alt="GitHub icon" />
+                        <Image src={withBasePath("/icons/github.svg")} width={24} height={24} alt="GitHub icon" />
                     </a>
                 </li>
             </ul>

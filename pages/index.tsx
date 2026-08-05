@@ -1,16 +1,17 @@
-import type { NextPage } from "next";
+﻿import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
+import { withBasePath } from "../components/basePath";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Jerrold Kyekye | Electrical Engineer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={withBasePath("/favicon.ico")} />
         <meta name="author" content="Jerrold Kyekye" />
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#0f172a" />
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
         <meta property="og:site_name" content="Jerrold Kyekye" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/partners/jerrold.jpeg" />
+        <meta property="og:image" content={withBasePath("/images/partners/jerrold.jpeg")} />
       </Head>
 
       <Header />

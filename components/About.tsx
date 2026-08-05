@@ -1,5 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { withBasePath } from "./basePath";
 
 export default function About() {
     return (
@@ -17,17 +18,17 @@ export default function About() {
                 <div className="about-cards">
                     <AboutCard
                         title="Circuit Analysis"
-                        icon="/icons/code.svg"
+                        icon={withBasePath("/icons/code.svg")}
                         description="Comfortable breaking down systems into smaller blocks and reasoning through how each part behaves."
                         projects={3} />
                     <AboutCard
                         title="Hands-On Systems"
-                        icon="/icons/design.svg"
+                        icon={withBasePath("/icons/design.svg")}
                         description="Interested in practical work across labs, prototyping, instrumentation, and hardware troubleshooting."
                         projects={4} />
                     <AboutCard
                         title="Communication"
-                        icon="/icons/phone.svg"
+                        icon={withBasePath("/icons/phone.svg")}
                         description="I value clear documentation, clean presentation, and making technical work easy to understand."
                         projects={2} />
                 </div>
